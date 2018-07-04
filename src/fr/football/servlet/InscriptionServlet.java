@@ -30,8 +30,13 @@ public class InscriptionServlet  extends HttpServlet{
     public static final String CHAMP_CP     = "69003";
     public static final String CHAMP_VILLE  = "ville";
     public static final String CHAMP_NAISS  = "23/06/1996";
+    public static final String ATT_ERREURS  = "erreurs";
+    public static final String ATT_RESULTAT = "resultat";
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String resultat;
+        Map<String, String> erreurs = new HashMap<String, String>();
+
         /* Récupération des champs du formulaire. */
         String email        = request.getParameter( CHAMP_EMAIL );
         String motDePasse   = request.getParameter( CHAMP_PASS );
@@ -43,13 +48,41 @@ public class InscriptionServlet  extends HttpServlet{
         String ville        = request.getParameter( CHAMP_VILLE );
         String naiss        = request.getParameter( CHAMP_NAISS );
 
+
+        /* Validation du champ email. */
         try {
             validationEmail( email );
-            validationMotsDePasse( motDePasse, confirmation );
-            validationNom( nom );
-        } catch (Exception e) {
-            /* Gérer les erreurs de validation ici. */
+        } catch ( Exception e ) {
+            erreurs.put( CHAMP_EMAIL, e.getMessage() );
         }
+
+        /* Validation des champs mot de passe et confirmation. */
+        try {
+            validationMotsDePasse( motDePasse, confirmation );
+        } catch ( Exception e ) {
+            erreurs.put( CHAMP_PASS, e.getMessage() );
+        }
+
+        /* Validation du champ nom. */
+        try {
+            validationNom( nom );
+        } catch ( Exception e ) {
+            erreurs.put( CHAMP_NOM, e.getMessage() );
+        }
+
+        /* Initialisation du résultat global de la validation. */
+        if ( erreurs.isEmpty() ) {
+            resultat = "Succès de l'inscription.";
+        } else {
+            resultat = "Échec de l'inscription.";
+        }
+
+        /* Stockage du résultat et des messages d'erreur dans l'objet request */
+        request.setAttribute( ATT_ERREURS, erreurs );
+        request.setAttribute( ATT_RESULTAT, resultat );
+
+        /* Transmission de la paire d'objets request/response à notre JSP */
+        this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
     }
 
     private void validationEmail( String email ) throws Exception {
@@ -61,8 +94,25 @@ public class InscriptionServlet  extends HttpServlet{
             throw new Exception( "Merci de saisir une adresse mail." );
         }
     }
-    private void validationMotsDePasse( String motDePasse, String confirmation ) throws Exception{}
-    private void validationNom( String nom ) throws Exception{}
+    /**
+     * Valide les mots de passe saisis.
+     */
+    private void validationMotsDePasse( String motDePasse, String confirmation ) throws Exception{
+        if (motDePasse != null && motDePasse.trim().length() != 0 && confirmation != null && confirmation.trim().length() != 0) {
+            if (!motDePasse.equals(confirmation)) {
+                throw new Exception("Les mots de passe entrés sont différents, merci de les saisir à nouveau.");
+            } else if (motDePasse.trim().length() < 3) {
+                throw new Exception("Les mots de passe doivent contenir au moins 3 caractères.");
+            }
+        } else {
+            throw new Exception("Merci de saisir et confirmer votre mot de passe.");
+        }
+    }
+    private void validationNom( String nom ) throws Exception {
+        if ( nom != null && nom.trim().length() < 3 ) {
+            throw new Exception( "Le nom d'utilisateur doit contenir au moins 3 caractères." );
+        }
+    }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
