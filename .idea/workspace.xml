@@ -7,27 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0103e241-ace8-4111-a454-33f80a224717" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/fr/Service/ConnexionService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/fr/Utils/DataConnect.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/fr/football/pojos/User.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/fr/football/servlet/InscriptionServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/Connexion.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/Inscription.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Projet Foot.iml" afterPath="$PROJECT_DIR$/Projet Foot.iml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/WEB-INF/europe.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/WEB-INF/europe.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/WEB-INF/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/WEB-INF/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/WEB-INF/ligue.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/WEB-INF/ligue.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/WEB-INF/news.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/WEB-INF/news.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/WEB-INF/team.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/WEB-INF/team.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/WEB-INF/videos.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/WEB-INF/videos.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/css/style.css" afterPath="$PROJECT_DIR$/out/artifacts/Projet_Foot_war_exploded/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/europe.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/europe.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/ligue.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/ligue.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/news.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/news.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/team.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/team.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/videos.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/videos.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/fr/football/servlet/InscriptionServlet.java" afterPath="$PROJECT_DIR$/src/fr/football/servlet/InscriptionServlet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,9 +45,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="15" column="95" lean-forward="false" selection-start-line="15" selection-start-column="95" selection-end-line="15" selection-end-column="95" />
-              <folding>
-                <marker date="1530689244288" expanded="true" signature="1556:1564" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,8 +117,8 @@
       <file leaf-file-name="InscriptionServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fr/football/servlet/InscriptionServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="76" column="39" lean-forward="false" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+            <state relative-caret-position="397">
+              <caret line="50" column="54" lean-forward="true" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -221,8 +200,8 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -241,35 +220,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="foot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foot" type="462c0819:PsiDirectoryNode" />
+              <item name="football" type="b2602c69:ProjectViewProjectNode" />
+              <item name="football" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="foot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foot" type="462c0819:PsiDirectoryNode" />
+              <item name="football" type="b2602c69:ProjectViewProjectNode" />
+              <item name="football" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="foot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foot" type="462c0819:PsiDirectoryNode" />
+              <item name="football" type="b2602c69:ProjectViewProjectNode" />
+              <item name="football" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="fr" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="foot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foot" type="462c0819:PsiDirectoryNode" />
+              <item name="football" type="b2602c69:ProjectViewProjectNode" />
+              <item name="football" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="fr" type="462c0819:PsiDirectoryNode" />
               <item name="football" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="foot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foot" type="462c0819:PsiDirectoryNode" />
+              <item name="football" type="b2602c69:ProjectViewProjectNode" />
+              <item name="football" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="fr" type="462c0819:PsiDirectoryNode" />
               <item name="football" type="462c0819:PsiDirectoryNode" />
@@ -279,8 +257,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -292,13 +271,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Cours\B3\Projet Foot\src\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Cours\B3\Projet Foot\web\img" />
       <recent name="D:\Cours\B3\Projet Foot\web\css" />
       <recent name="D:\Cours\B3\Projet Foot\web\WEB-INF" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Cours\B3\Projet Foot\src\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -502,14 +481,18 @@
       <workItem from="1530686226574" duration="358000" />
       <workItem from="1530686664628" duration="5484000" />
       <workItem from="1530694225794" duration="23000" />
+      <workItem from="1530697817559" duration="238000" />
+      <workItem from="1530698068059" duration="363000" />
+      <workItem from="1530704925012" duration="181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34798000" />
+    <option name="totallyTimeSpent" value="35580000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -525,8 +508,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40153173" sideWeight="0.70054644" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40153173" sideWeight="0.29945356" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17590618" sideWeight="0.6785714" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17590618" sideWeight="0.32142857" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -867,9 +850,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="95" lean-forward="false" selection-start-line="15" selection-start-column="95" selection-end-line="15" selection-end-column="95" />
-          <folding>
-            <marker date="1530689244288" expanded="true" signature="1556:1564" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -927,8 +908,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/football/servlet/InscriptionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="76" column="39" lean-forward="false" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+        <state relative-caret-position="397">
+          <caret line="50" column="54" lean-forward="true" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
