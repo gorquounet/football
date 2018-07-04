@@ -15,6 +15,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import fr.Service.UserService;
 import fr.football.pojos.User;
 import fr.Service.ConnexionService;
 import fr.Utils.DataConnect;
@@ -89,15 +91,10 @@ public class InscriptionServlet  extends HttpServlet{
         /* Création de l'objet gérant les requêtes */
 
         }
-    }
-
-
-    private void inscriptionJoueur(String pNom, String pPrenom, String pEmail, String pMotDePasse, String pNiveau, String pVille ) {
+    private void inscriptionJoueur(String pNom, String pPrenom, String pEmail, String pMotDePasse,String pCp,  String pAdresse, String pVille, String pNaiss ) {
         User player = null;
         try (Connection connection = DataConnect.getConnection()) {
-            VilleService villeService = new VilleService(connection);
-            Ville ville = villeService.getVilleFromNom(pVille);
-            player = new Joueur(pEmail,pNom,pPrenom,pMotDePasse,ville.getId(),pNiveau);
+            player = new User(pEmail,pNom,pPrenom,pMotDePasse, pCp, pAdresse,pVille, pNaiss);
             connection.close();
         }
         catch (SQLException | ClassNotFoundException e) {
@@ -105,7 +102,7 @@ public class InscriptionServlet  extends HttpServlet{
         }
 
         try (Connection connection = DataConnect.getConnection()) {
-            JoueurService joueurService = new JoueurService(connection);
+            UserService joueurService = new UserService(connection);
             joueurService.createJoueur(player);
             connection.close();
         }
@@ -114,18 +111,6 @@ public class InscriptionServlet  extends HttpServlet{
         }
     }
 
-    private List<Ville> getAllVille(){
-        List<Ville> villes = new ArrayList<Ville>();
-        try (Connection connection = DataConnect.getConnection()) {
-            VilleService villeService = new VilleService(connection);
-            villes = villeService.getAll();
-            connection.close();
-        }
-        catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        return villes;
-    }
 
     private void validationEmail( String email ) throws Exception {
         if (email != null && email.trim().length() != 0) {

@@ -13,9 +13,9 @@ public class User {
     private String cp;
     private String address;
     private String ville;
-    private Date   naiss;
+    private String   naiss;
 
-    public User ( String email, String nom, String prenom, String motDePasse, String cp, String address, String ville, Date naiss ) {
+    public User ( String email, String nom, String prenom, String motDePasse, String cp, String address, String ville, String naiss ) {
         this.email = email;
         this.nom = nom;
         this.prenom = prenom;
@@ -62,7 +62,7 @@ public class User {
         return ville;
     }
 
-    public Date getNaiss () {
+    public String getNaiss () {
         return naiss;
     }
 
@@ -94,7 +94,7 @@ public class User {
         this.ville = ville;
     }
 
-    public void setNaiss ( Date naiss ) {
+    public void setNaiss ( String naiss ) {
         this.naiss = naiss;
     }
     public String toString() {

@@ -68,7 +68,13 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Display Name" tabindex="3">
+                    <input type="text" name="date_naiss" id="date_naiss" class="form-control input-lg" placeholder="Birthday" tabindex="1">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="ville" id="ville" class="form-control input-lg" placeholder="City" tabindex="1">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="cp" id="cp" class="form-control input-lg" placeholder="Postal Code" tabindex="1">
                 </div>
                 <div class="form-group">
                     <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
