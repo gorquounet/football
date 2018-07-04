@@ -2,7 +2,9 @@ package fr.football.servlet;
 
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -83,6 +85,46 @@ public class InscriptionServlet  extends HttpServlet{
 
         /* Transmission de la paire d'objets request/response à notre JSP */
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
+
+        /* Création de l'objet gérant les requêtes */
+
+        }
+    }
+
+
+    private void inscriptionJoueur(String pNom, String pPrenom, String pEmail, String pMotDePasse, String pNiveau, String pVille ) {
+        User player = null;
+        try (Connection connection = DataConnect.getConnection()) {
+            VilleService villeService = new VilleService(connection);
+            Ville ville = villeService.getVilleFromNom(pVille);
+            player = new Joueur(pEmail,pNom,pPrenom,pMotDePasse,ville.getId(),pNiveau);
+            connection.close();
+        }
+        catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try (Connection connection = DataConnect.getConnection()) {
+            JoueurService joueurService = new JoueurService(connection);
+            joueurService.createJoueur(player);
+            connection.close();
+        }
+        catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private List<Ville> getAllVille(){
+        List<Ville> villes = new ArrayList<Ville>();
+        try (Connection connection = DataConnect.getConnection()) {
+            VilleService villeService = new VilleService(connection);
+            villes = villeService.getAll();
+            connection.close();
+        }
+        catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return villes;
     }
 
     private void validationEmail( String email ) throws Exception {
